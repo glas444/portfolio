@@ -1,0 +1,789 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: "Semplicita Pro Bold";
+  src: url("https://db.onlinewebfonts.com/t/d5f93e1b825e0f1729dc143050cadf84.eot");
+  src: url("https://db.onlinewebfonts.com/t/d5f93e1b825e0f1729dc143050cadf84.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d5f93e1b825e0f1729dc143050cadf84.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/d5f93e1b825e0f1729dc143050cadf84.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d5f93e1b825e0f1729dc143050cadf84.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d5f93e1b825e0f1729dc143050cadf84.svg#Semplicita Pro Bold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --panel-width: 2400px;
+  --navbar-width: 2550px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Times, serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: #0f141d;
+}
+
+/* ----------------------- HEADER NAVIGATION BAR */
+
+.navbar {
+  background-color: #1e2738cc;
+  border-radius: 0.6rem;
+  position: fixed;
+  margin: auto;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  padding: 0.3rem;
+  z-index: 999;
+  backdrop-filter: blur(8px);
+  max-width: var(--navbar-width);
+}
+
+.navbar-brand {
+  background-color: #1d2228;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.navbar-toggler {
+  font-size: var(--bs-navbar-toggler-font-size);
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+button.navbar-toggler svg {
+  stroke: #fff;
+}
+
+button.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.offcanvas {
+  background-color: #1d2228;
+}
+
+.offcanvas-body {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-link {
+  background-color: transparent;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background-color: hsla(210, 10%, 35%, 0.5);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.nav-link:focus {
+  color: #fff;
+  background-color: hsla(210, 10%, 35%, 0.5);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.nav-link {
+  transition: none;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: hsla(210, 10%, 35%, 0.5);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.dropdown-menu {
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: #1d2332;
+  border-radius: 0.3rem;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-menu .dropdown-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding: 0.6rem;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.dropdown-toggle:hover {
+  background-color: hsla(210, 10%, 35%, 0.5);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.dropdown-toggle:focus {
+  background-color: hsla(210, 10%, 35%, 0.5);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.dropdown-item {
+  color: #fff !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+#navbar .dropdown-item-block {
+  background-color: #1c202b;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: -15px;
+  padding: 1rem;
+}
+
+.btn-subscribe {
+  background-color: #0077b5;
+  color: #fff;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+.btn-subscribe:hover {
+  background-color: #0077b5;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+.btn-free {
+  background-color: #1c202b;
+  color: #fff;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+.btn-free:hover {
+  background-color: #1d2332;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+.btn-close {
+  color: #fff;
+  background: #362928;
+  font-size: 1.6rem;
+  padding: 0.4rem !important;
+  margin-left: -6px;
+}
+
+.dropdown-text {
+  color: #9c948a;
+}
+
+.sub-text {
+  color: #9c948a;
+  font-weight: 800;
+}
+
+.dropdown-toggle::after {
+  color: hsla(33, 8%, 58%, 0.5);
+}
+
+.form-control {
+  border: 1px solid transparent;
+  box-shadow: none;
+  border-radius: 0.5rem;
+}
+
+::placeholder {
+  color: #5c5757 !important;
+  font-weight: 600;
+}
+
+.transparent-icon {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.input-group:hover .form-control:not(:focus) {
+  border: solid 1px #9c948a;
+  border-radius: 0.5rem;
+}
+
+.form-control:focus {
+  border: 1px solid #ffc107;
+  box-shadow: none;
+  display: block;
+}
+
+.input-group > .form-control,
+.input-group > .form-floating,
+.input-group > .form-select {
+  background-color: #181b22cc;
+  color: #fff;
+  font-weight: 600;
+}
+
+.offcanvas-menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.offcanvas-menu li {
+  margin-bottom: 10px;
+}
+
+.offcanvas-menu li ul li {
+  list-style: none;
+}
+
+/*******************    IMAGES    *********************/
+
+.page {
+  /* padding-top: 56px; */
+  /* padding-top: var(--nav-height); */
+  font-size: 1rem;
+  line-height: 1.5;
+  background: #000;
+  -webkit-box-shadow: 0 0 50px rgba(11, 6, 4, 0.8),
+    0 0 100px rgba(11, 6, 4, 0.6), 0 0 500px rgba(11, 6, 4, 0.3);
+  box-shadow: 0 0 50px rgba(11, 6, 4, 0.8), 0 0 100px rgba(11, 6, 4, 0.6),
+    0 0 500px rgba(11, 6, 4, 0.3);
+  margin: 0 auto;
+  max-width: var(--panel-width);
+  min-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+/* 
+.wow-full-card .top-img:before {
+  content: "";
+  display: block;
+  padding-top: 50%;
+}
+.wow-full-card .top-img:before,
+.wow-full-card .top-img:after {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  display: block;
+  position: relative;
+} */
+
+.Panel-title {
+  font-size: 3.2249999999999996rem;
+  line-height: 1.5;
+  font-family: "Semplicita Pro Bold";
+  color: #fff;
+  text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ------------------------------- FULL CARD SMALL */
+.wow-full-card {
+  /* border: 0.01px solid #504137; */
+
+  background-color: #000;
+  background-position: 50% 50%;
+  -webkit-box-shadow: inset 0 -180px 200px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.08),
+    inset 0 -180px 200px rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-size: var(--panel-width) auto;
+  position: relative;
+  height: 480px;
+}
+
+.wow-full-card-duo {
+  border: 0.01px solid #252525ae;
+  background-color: #000000;
+  /* background-position: 50% 50%; */
+  /* object-fit: contain; */
+  /* -webkit-box-shadow: inset 0 -180px 200px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.08),
+    inset 0 -180px 200px rgba(0, 0, 0, 0.6); */
+  /* background-repeat: no-repeat; */
+  /* background-size: var(--panel-width) auto; */
+  /* position: relative; */
+
+  padding: 0%;
+  /* width: 50 */
+
+  /* border-top: 1px solid #504137; */
+  /* position: static; */
+}
+
+.wow-card-img img {
+  display: block;
+  width: 100%;
+
+  /* width: 12%; */
+  /* position: relative; */
+}
+
+.wow-card-img video {
+  display: block;
+  /* background-position: 50% 50%; */
+
+  width: 100%;
+}
+
+.wow-card-desc {
+  background-color: #000;
+  background-position: 50% 50%;
+  -webkit-box-shadow: inset 0 -180px 200px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.08),
+    inset 0 -180px 200px rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  /* background-size: var(--panel-width) auto; */
+  /* position: relative; */
+  height: 200px;
+}
+
+.col-gap {
+  column-gap: 0.5rem;
+}
+
+.wow-full-card-duo .right {
+  padding-left: 20%;
+}
+
+.wow-full-card-duo .left {
+  padding-left: 20px;
+}
+
+.wow-full-card-duo:hover {
+  border: 1px solid #00cbf8;
+}
+
+/* .wow-card-img.pp {
+  background-image: url(/images/pp_banner2.gif);
+}
+
+.wow-card-img.pp:hover {
+  background-image: url(/images/pp_banner3.gif);
+} */
+
+.wow-full-card-duo:hover img.static {
+  opacity: 0;
+}
+
+/* --------------------------- FULL CARD BIG */
+
+.wow-full-card.noshadow {
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.08);
+}
+
+.wow-full-card.big {
+  height: 1040px;
+  -webkit-box-shadow: inset 0 -180px 200px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 -180px 200px rgba(0, 0, 0, 0.6);
+}
+
+.wow-full-card.big .container2 {
+  max-width: 1600px;
+}
+
+.wow-full-card.big .container2 .panel p {
+  width: 40%;
+}
+
+.wow-full-card.small {
+  height: 80px;
+}
+
+.wow-full-card.foot {
+  height: 600px;
+}
+
+.social-table {
+  box-sizing: border-box;
+  color: rgb(235, 222, 194);
+  display: block;
+  font-family: "Semplicita Pro Bold";
+  font-feature-settings: "kern", "kern";
+  font-kerning: normal;
+  font-size: 17.28px;
+  font-weight: 700;
+  height: 45.9028px;
+  line-height: 25.92px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+  text-align: center;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+  text-transform: uppercase;
+  width: 182.24px;
+}
+
+.social-links {
+  display: table-cell;
+  height: 100%;
+  padding: 0 20px;
+}
+
+/* --------------------------- CARD BIG */
+
+.right {
+  float: right;
+  text-align: right;
+}
+
+.left {
+  float: left;
+  text-align: left;
+}
+
+.container2 {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+.container.smol {
+  padding: 3%;
+  max-width: 500px;
+  height: 100%;
+  text-align: center;
+}
+
+.container2.small {
+  padding: 3%;
+  margin: auto;
+  text-align: center;
+}
+
+.container2.small .mid {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container2 .panel {
+  position: relative;
+  height: 100%;
+  margin: 10px;
+}
+
+.container2 .panel-small {
+  position: relative;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.container2 .panel h1 {
+  float: inherit;
+  color: #ffffff;
+  line-height: 1.5em;
+  font-family: "Semplicita Pro Bold";
+  text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+  font-size: 52px;
+  width: 100%;
+}
+
+.container2 .panel h2 {
+  font-size: 1.44rem;
+  line-height: 1.5;
+  color: #ebdec2;
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  width: 100%;
+}
+
+.wow-full-card .desc {
+  float: inherit;
+  width: 100%;
+  display: block;
+  /* float: right; */
+}
+
+.wow-full-card .btn-panel {
+  box-sizing: border-box;
+  float: inherit;
+  /* float: right; */
+  text-align: right;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+}
+
+.Panel-button {
+  margin: 10px;
+}
+
+.Link {
+  cursor: pointer;
+}
+
+.Button {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  /* margin: 0; */
+  padding: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+.Button--ghost {
+  font-size: 1.08rem;
+  line-height: 1.5;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #000;
+  color: #ffffff;
+  min-width: 180px;
+  text-transform: uppercase;
+  transition: background 0.2s, color 0.2s;
+}
+
+.Button-label {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 1280px) {
+  .Button--ghost {
+    font-size: 1.44rem;
+  }
+}
+
+@media (min-width: 720px) {
+  .Button--ghost {
+    font-size: 1.224rem;
+  }
+}
+
+.Button--ghost .Button-outer {
+  border: 1px solid #ffffff;
+}
+
+.Button--ghost .Button-inner {
+  padding: 12px 30px;
+}
+
+/* GITHUB BUTTON */
+
+.Button--ghost.Button--github {
+  background: #1f28387d;
+}
+
+.Button--ghost.Button--github .Button-outer {
+  border-color: #52869ecc;
+}
+
+.Button--ghost.Button--github:focus,
+.Button--ghost.Button--github:hover {
+  background: #3c5c7a;
+}
+
+/* WEBSITE BUTTON */
+.Button--ghost.Button--website {
+  background: #0077b5;
+}
+
+.Button--ghost.Button--website .Button-outer {
+  border-color: #7caac4;
+}
+.Button--ghost.Button--website:focus,
+.Button--ghost.Button--website:hover {
+  background: #498eb4;
+}
+
+.container2 .panel p {
+  float: inherit;
+  font-size: 17.28px;
+  line-height: 1.5;
+  color: #ebdec2;
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  width: 50%;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+}
+
+.container2 .panel p.white-bg {
+  color: #554f42;
+}
+
+.container2 .panel a.rightside {
+  background: #1f2838cc;
+  /* color: #f7b10a; */
+  color: #ffffff;
+  display: inline-block;
+  /* border: 1px solid #c77e19; */
+  border: 1px solid #ffffff;
+  margin-top: 20px;
+  padding: 15px 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.25s;
+}
+
+.container2 .panel a.leftside {
+  background: rgba(29, 29, 29, 0.884);
+  /* color: #f7b10a; */
+  color: #ffffff;
+  display: inline-block;
+  /* border: 1px solid #c77e19; */
+  border: 1px solid #ffffff;
+  margin-top: 20px;
+  padding: 15px 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.25s;
+}
+
+.container2 .panel a.rightside:hover {
+  /* background: #b06601;
+  color: #ffd36b; */
+  background: #3c5c7a;
+  color: #ffffff;
+}
+
+.container2 .panel a.leftside:hover {
+  /* background: #b06601;
+  color: #ffd36b; */
+  background: #535353;
+  color: #ffffff;
+}
+
+.container2 .panel a.extra {
+  color: #ffffff;
+  background: rgba(161, 0, 167, 0.596);
+  border-color: #ffffff;
+  display: inline-block;
+  /* border: 1px solid #c77e19; */
+  border: 1px solid #ffffff;
+  margin-top: 20px;
+  padding: 15px 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.25s;
+}
+
+.container2 .panel a.extra:hover {
+  background: #c214b3;
+}
+
+.wow-full-card.small .container2 .panel a {
+  background: none;
+  padding: 0;
+  border: none;
+  display: inline-block;
+}
+.wow-full-card.small .container2 .panel a img {
+  height: 40px;
+}
+.wow-full-card.small .container2 .panel p a:last-child {
+  padding-left: 10px;
+}
+/* .wow-full-card-duo .video {
+  top: 0;
+} */
+
+/* .col-6 img {
+  height: 200px;
+}
+.col-6 video {
+  height: 200px;
+  object-fit: fill;
+} */
+
+/* .wow-full-card-duo .video video {
+  width: 20%;
+} */
+.mid {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.mid-small {
+  display: table;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.divider {
+  height: 4px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+}
+
+.row {
+  max-width: 2400px;
+  --bs-gutter-x: 0rem;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  --bs-gutter-x: 0rem;
+}
