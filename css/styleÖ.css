@@ -1,0 +1,626 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: "Semplicita Pro Bold";
+  src: url("https://db.onlinewebfonts.com/t/d5f93e1b825e0f1729dc143050cadf84.eot");
+  src: url("https://db.onlinewebfonts.com/t/d5f93e1b825e0f1729dc143050cadf84.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d5f93e1b825e0f1729dc143050cadf84.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/d5f93e1b825e0f1729dc143050cadf84.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d5f93e1b825e0f1729dc143050cadf84.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d5f93e1b825e0f1729dc143050cadf84.svg#Semplicita Pro Bold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: #000000a4;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Semplicita Pro", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: #000000a4;
+}
+
+.navbar {
+  background-color: rgba(56, 31, 30, 0.8);
+  border-radius: 0.6rem;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  padding: 0.3rem;
+  z-index: 999;
+  backdrop-filter: blur(8px);
+}
+
+.navbar-brand {
+  background-color: #281d1f;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.navbar-toggler {
+  font-size: var(--bs-navbar-toggler-font-size);
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+button.navbar-toggler svg {
+  stroke: #fff;
+}
+
+button.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.offcanvas {
+  background-color: #281d1f;
+}
+
+.offcanvas-body {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-link {
+  background-color: transparent;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background-color: hsla(347, 10%, 35%, 0.5);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.nav-link:focus {
+  color: #fff;
+  background-color: hsla(347, 10%, 35%, 0.5);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.nav-link {
+  transition: none;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: hsla(347, 10%, 35%, 0.5);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.dropdown-menu {
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: #2b1d1c;
+  border-radius: 0.3rem;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-menu .dropdown-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding: 0.6rem;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.dropdown-toggle:hover {
+  background-color: hsla(347, 10%, 35%, 0.5);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.dropdown-toggle:focus {
+  background-color: hsla(347, 10%, 35%, 0.5);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.dropdown-item {
+  color: #fff !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+#navbar .dropdown-item-block {
+  background-color: #211510;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: -15px;
+  padding: 1rem;
+}
+
+.btn-subscribe {
+  background-color: #0077b5;
+  color: #fff;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+.btn-subscribe:hover {
+  background-color: #0077b5;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+.btn-free {
+  background-color: #20170e;
+  color: #fff;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+.btn-free:hover {
+  background-color: #2c2014;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+.btn-close {
+  color: #fff;
+  background: #362928;
+  font-size: 1.6rem;
+  padding: 0.4rem !important;
+  margin-left: -6px;
+}
+
+.dropdown-text {
+  color: #9c948a;
+}
+
+.sub-text {
+  color: #9c948a;
+  font-weight: 800;
+}
+
+.dropdown-toggle::after {
+  color: hsla(33, 8%, 58%, 0.5);
+}
+
+.form-control {
+  border: 1px solid transparent;
+  box-shadow: none;
+  border-radius: 0.5rem;
+}
+
+::placeholder {
+  color: #5c5757 !important;
+  font-weight: 600;
+}
+
+.transparent-icon {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.input-group:hover .form-control:not(:focus) {
+  border: solid 1px #9c948a;
+  border-radius: 0.5rem;
+}
+
+.form-control:focus {
+  border: 1px solid #ffc107;
+  box-shadow: none;
+  display: block;
+}
+
+.input-group > .form-control,
+.input-group > .form-floating,
+.input-group > .form-select {
+  background-color: #150e0e;
+  color: #fff;
+  font-weight: 600;
+}
+
+.offcanvas-menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.offcanvas-menu li {
+  margin-bottom: 10px;
+}
+
+.offcanvas-menu li ul li {
+  list-style: none;
+}
+
+.bg-dropdown {
+  background-color: #1e1414;
+}
+
+a {
+  color: #eaeaea;
+}
+& a:hover {
+  color: #ffc107;
+}
+
+/* Footer Info */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #202020;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/****************************************/
+.wow-card {
+  background: #504137
+    url("https://worldofwarcraft.akamaized.net/static/components/Panel/Panel-bg-stacked.jpg")
+    top left;
+  text-align: center;
+  position: relative;
+  border: 1px solid #504137;
+}
+
+.wow-card.right:before {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  position: absolute;
+  background: #000;
+  z-index: 1;
+  border-right: 1px solid #0400ff;
+}
+.wow-card:hover {
+  border: 1px solid #f8b700;
+}
+.wow-card .panel {
+  height: 140px;
+  padding: 30px;
+  border-top: 1px solid #504137;
+  position: static;
+  top: 0;
+  bottom: 0;
+  right: 10%;
+  left: 10%;
+}
+
+.wow-card .panel p {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+.wow-card .panel h1 {
+  color: #f8b700;
+  line-height: 1.5em;
+  font-family: "Semplicita";
+  font-size: 32px;
+}
+
+.wow-card .top-img {
+  max-height: 375px;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.wow-card .top-img:before {
+  content: "";
+  display: block;
+  padding-top: 50%;
+}
+.wow-card .top-img:before,
+.wow-card .top-img:after {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  display: block;
+  position: relative;
+}
+
+.wow-full-card2 {
+  border: 1px solid #504137;
+  background-color: #000;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 900px;
+}
+
+.wow-full-card {
+  border: 1px solid #504137;
+  background-color: #000;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 480px;
+}
+
+.Panel-title {
+  font-size: 3.2249999999999996rem;
+  line-height: 1.5;
+  font-family: Semplicita Pro, Open Sans, Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.wow-full-card2 .right {
+  float: right;
+  text-align: right;
+}
+
+
+
+.wow-full-card2 .container {
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+.wow-full-card2 .container .panel {
+  position: relative;
+  height: 100%;
+}
+.wow-full-card2 .container .panel h1 {
+  color: #ffffff;
+  line-height: 1.5em;
+  font-family: "Semplicita";
+  font-size: 52px;
+}
+.wow-full-card2 .desc {
+  width: 100%;
+  display: block;
+  float: right;
+}
+.wow-full-card2 .desc.izq {
+  float: left !important;
+}
+.wow-full-card2 .container .panel p {
+  font-size: 16px;
+  color: #ebdec2;
+  font-family: "Semplicita", sans-serif;
+  line-height: 1.5em;
+  width: 40%;
+}
+.wow-full-card2 .container .panel a {
+  background: rgba(0, 0, 0, 0.4);
+  /* color: #f7b10a; */
+  color: #ffffff;
+  display: inline-block;
+  /* border: 1px solid #c77e19; */
+  border: 1px solid #ffffff;
+  margin-top: 20px;
+  padding: 15px 60px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.25s;
+}
+
+.wow-full-card2 .container .panel a.extra {
+  /* color: #f7b10a; */
+  background: rgba(159, 22, 0, 0.6);
+  border-color: #ea3012;
+  display: inline-block;
+  /* border: 1px solid #c77e19; */
+  border: 1px solid #ffffff;
+  margin-top: 20px;
+  padding: 15px 60px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.25s;
+}
+.wow-full-card2 .container .panel a.extra:hover {
+  background: #9f1600;
+}
+
+/* .wow-full-card .container .panel a.extra {
+  background: rgba(159, 22, 0, 0.6);
+  border-color: #ea3012;
+}
+.wow-full-card .container .panel a.extra:hover {
+  background: #9f1600;
+} */
+.wow-full-card2 .container .panel a:hover {
+  /* background: #b06601;
+  color: #ffd36b; */
+  background: #000000;
+  color: #ffffff;
+}
+
+/* eaw */
+
+.wow-full-card.small {
+  height: 380px;
+}
+.wow-full-card .right {
+  float: right;
+  text-align: right;
+}
+
+.wow-full-card .container {
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+.wow-full-card .container .panel {
+  position: relative;
+  height: 100%;
+}
+.wow-full-card .container .panel h1 {
+  color: #ffffff;
+  line-height: 1.5em;
+  font-family: "Semplicita";
+  font-size: 52px;
+}
+.wow-full-card .desc {
+  width: 100%;
+  display: block;
+  float: right;
+}
+.wow-full-card .desc.izq {
+  float: left !important;
+}
+.wow-full-card .container .panel p {
+  font-size: 16px;
+  color: #ebdec2;
+  font-family: "Semplicita", sans-serif;
+  line-height: 1.5em;
+  width: 40%;
+}
+.wow-full-card .container .panel a {
+  background: rgba(0, 0, 0, 0.4);
+  /* color: #f7b10a; */
+  color: #ffffff;
+  display: inline-block;
+  /* border: 1px solid #c77e19; */
+  border: 1px solid #ffffff;
+  margin-top: 20px;
+  padding: 15px 60px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.25s;
+}
+
+.wow-full-card .container .panel a.extra {
+  /* color: #f7b10a; */
+  background: rgba(159, 22, 0, 0.6);
+  border-color: #ea3012;
+  display: inline-block;
+  /* border: 1px solid #c77e19; */
+  border: 1px solid #ffffff;
+  margin-top: 20px;
+  padding: 15px 60px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.25s;
+}
+.wow-full-card .container .panel a.extra:hover {
+  background: #9f1600;
+}
+
+/* .wow-full-card .container .panel a.extra {
+  background: rgba(159, 22, 0, 0.6);
+  border-color: #ea3012;
+}
+.wow-full-card .container .panel a.extra:hover {
+  background: #9f1600;
+} */
+.wow-full-card .container .panel a:hover {
+  /* background: #b06601;
+  color: #ffd36b; */
+  background: #000000;
+  color: #ffffff;
+}
+.wow-full-card.small .container .panel a {
+  background: none;
+  padding: 0;
+  border: none;
+  display: inline-block;
+}
+.wow-full-card.small .container .panel a img {
+  height: 40px;
+}
+.wow-full-card.small .container .panel p a:last-child {
+  padding-left: 10px;
+}
+.wow-full-card .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.wow-full-card .video video {
+  width: 100%;
+  height: 100%;
+}
+.mid {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.divider {
+  height: 4px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+}
+.row {
+  /*
+		Original is 2400px but for
+		this pen we use 2100px
+	*/
+  max-width: 2100px;
+  margin: 0 auto;
+}
