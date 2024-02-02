@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="stylesheet" rel="https://db.onlinewebfonts.com/c/d5f93e1b825e0f1729dc143050cadf84?family=Semplicita+Pro+Bold"/>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Andreas Wrife Portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl" id="navbar">
+      <a class="navbar-brand" href="#">
+        <img src="images/favicon.ico" alt="paladin_icon" />
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvas"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          part="icon blz-icon"
+        >
+          <path d="M3 12h18M3 6h18M3 18h18"></path>
+        </svg>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Game Info Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="blz-nav-wow-game-info"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Contents
+            </a>
+            <ul
+              class="dropdown-menu p-3"
+              aria-labelledby="blz-nav-wow-game-info"
+            >
+              <li>
+                <a class="dropdown-item mb-3" href="#">Overview</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Master's Thesis</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Fluid Simulation</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">NightMar</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Marball</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Curse of Hau</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Wumpus</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Pixel Paladin</a>
+              </li>
+              <li class="dropdown-item-block">
+                <span class="dropdown-text small ps-2">LORE</span>
+                <a class="dropdown-item" href="#">Linkedin &amp; Media</a>
+                <a class="dropdown-item" href="#">GitHub Profile</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Expansions Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="blz-nav-wow-expansions"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <!--  Advanced Graphics and Interaction
+                • Linear Algebra. Advanced Course
+                • Deep Learning in Data Science
+                • Artificial Intelligence
+                • Visualisation
+                • Theoretical Physics
+                • Simulation and Modeling
+                • Probability Theory and Statistics
+                • Single and Multi-variable Calculus -->
+              Course Work
+            </a>
+            <ul
+              class="dropdown-menu p-3"
+              aria-labelledby="blz-nav-wow-expansions"
+            >
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Advanced Graphics and Interaction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Linear Algebra. Advanced Course</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Deep Learning in Data Science</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Simulation and Modeling</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Single and Multi-variable Calculus</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- News Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">CV</a>
+          </li>
+          <!-- Community Dropdown -->
+          <!-- <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="blz-nav-wow-community"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Community
+            </a>
+            <ul
+              class="dropdown-menu p-3"
+              aria-labelledby="blz-nav-wow-community"
+            >
+              <li>
+                <a class="dropdown-item" href="#">Forums</a>
+              </li>
+              <li>
+                <a class="dropdown-item mb-3" href="#">Recruit A Friend</a>
+              </li>
+              <span class="dropdown-text small ps-2">LEADERBOARDS</span>
+              <li>
+                <a class="dropdown-item" href="#">Mythic Dungeon</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Mythic Raid</a>
+              </li>
+              <li>
+                <a class="dropdown-item mb-3" href="#">Player vs. Player</a>
+              </li>
+              <li class="dropdown-item-block">
+                <span class="dropdown-text small ps-2">ESPORTS</span>
+                <a class="dropdown-item" href="#">Arena World Championship</a>
+                <a class="dropdown-item" href="#"
+                  >Mythic Dungeon International</a
+                >
+              </li>
+            </ul>
+          </li> -->
+          <!-- Shop Dropdown -->
+          <!-- <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="blz-nav-wow-shop"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Shop
+            </a>
+            <ul class="dropdown-menu p-3" aria-labelledby="blz-nav-wow-shop"> -->
+          <!-- <li>
+                <a class="dropdown-item mb-3" href="#">
+                  <div style="display: flex; align-items: center">
+                    <img
+                      src="https://blz-contentstack-images.akamaized.net/v3/assets/blt72f16e066f85e164/blta76b5a8706ea4c77/63f51ab34c740e6b39ed8137/in-game_content.png"
+                      alt="Image"
+                      style="width: 40px; height: 40px; margin-right: 10px"
+                    />
+                    <div>
+                      In-Game Content<br />
+                      <span class="sub-text small"
+                        >Mounts, Pets, Services...</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </li>
+                 <li class="dropdown-item-block">
+                <a class="dropdown-item" href="#"
+                  >Gear
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#9c948a"
+                    stroke="#9c948a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    viewBox="0 0 24 24"
+                    part="icon blz-icon"
+                    style="width: 15px; height: 15px"
+                  >
+                    <path d="M7 17 17 7m0 0H7m10 0v10"></path>
+                  </svg>
+                </a>
+              </li> -->
+          <!-- </ul>
+          </li> -->
+        </ul>
+        <!-- Account Dropdown -->
+        <ul class="navbar-nav ms-auto me-2">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle account-menu"
+              href="#"
+              id="blz-nav-wow-account"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              About
+            </a>
+            <!-- <ul class="dropdown-menu p-3">
+              <li>
+                <div
+                  class="btn btn-primary w-100 p-2"
+                  href="/login"
+                  icon="battlenet"
+                  icon-size="300"
+                >
+                  Log In
+                </div>
+              </li>
+              <li>
+                <a class="dropdown-item mt-3" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill=""
+                    stroke="#9c948a"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    aria-labelledby="blz-icon-title-user-circle"
+                    viewBox="0 0 24 24"
+                    part="icon blz-icon"
+                    style="width: 20px; height: 20px"
+                  >
+                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                    <path
+                      d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a1.998 1.998 0 0 1 0 2.83a1.998 1.998 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33a1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1 2.83 2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82V9a2 2 0 1 0-4 0v.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33 1.82l-.06.06a2 2 0 1 1-3.417 1.415a2 2 0 0 1 .587 1.415l.06.06a1.65 1.65 0 0 0 .33 1.82V9a1.65 1.65 0 0 0-1.51 1H3a2 2 0 1 1 0 4h.09a1.65 1.65 0 0 0 1.51-1Z"
+                    ></path>
+                  </svg>
+                  WoW Characters
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="#9c948a"
+                    viewBox="0 0 24 24"
+                    part="icon blz-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6M3 6 6 2m0 0H3m3 0V2m0 4V2M6 2h12m0 0l3 4m0-4v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6M3 6h18m-5 4a4 4 0 1 1-8 0"
+                    ></path>
+                  </svg>
+                  Account Settings</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="#9c948a"
+                    viewBox="0 0 24 24"
+                    part="icon blz-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m3 6 3-4h12l3 4M3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6M3 6h18m-5 4a4 4 0 1 1-8 0"
+                    ></path>
+                  </svg>
+                  Sign Up</a
+                >
+              </li>
+              <li class="dropdown-item-block">
+                <a class="dropdown-item" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="#9c948a"
+                    viewBox="0 0 24 24"
+                    part="icon blz-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4m4-5 5 5m0 0 5-5m-5 5V3"
+                    ></path>
+                  </svg>
+                  Support</a
+                >
+                <a class="dropdown-item" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="#9c948a"
+                    viewBox="0 0 24 24"
+                    part="icon blz-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a1.998 1.998 0 0 1 0 2.83a1.998 1.998 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33a1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1 2.83 2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82V9a2 2 0 1 0-4 0v.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33 1.82l-.06.06a2 2 0 1 1-3.417 1.415a2 2 0 0 1 .587 1.415l.06.06a1.65 1.65 0 0 0 .33 1.82V9a1.65 1.65 0 0 0-1.51 1H3a2 2 0 1 1 0 4h.09a1.65 1.65 0 0 0 1.51-1Z"
+                    ></path>
+                  </svg>
+                  Shop</a
+                >
+                <a class="dropdown-item" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="#9c948a"
+                    viewBox="0 0 24 24"
+                    part="icon blz-icon"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4m4-5 5 5m0 0 5-5m-5 5V3"
+                    ></path>
+                  </svg>
+                  Download Launcher</a
+                >
+              </li> 
+            </ul>-->
+          </li>
+          <!-- Try Free Button -->
+          <li class="nav-item">
+            <a class="nav-link btn-free px-4 rounded-3" href="#">CV</a>
+          </li>
+          <!-- Subscribe Now Button -->
+          <li class="nav-item">
+            <a class="nav-link btn-subscribe px-4 rounded-3" href="#"
+              >Linkedin Profile</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas">
+      <div class="offcanvas-header text-center">
+        <button
+          type="button"
+          class="btn-close d-flex justify-content-center align-items-center rounded"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="fas fa-times text-white"></i>
+        </button>
+      </div>
+      <div class="logo-container mt-3 text-center">
+        <img
+          class="logo"
+          src="https://blz-contentstack-images.akamaized.net/v3/assets/blt72f16e066f85e164/blta6f761b70ed1439b/6407995f4f98c853eaf09a8f/Logo-wow-NA.png"
+          alt="Logo"
+        />
+      </div>
+      <div class="offcanvas-body">
+        <form class="navbar-form pb-3 pt-3">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control p-2"
+              placeholder="Characters, Guilds, News"
+            />
+          </div>
+        </form>
+        <ul class="offcanvas-menu"></ul>
+      </div>
+    </div>
+
+    <!-- Background Video -->
+    <!--    <video
+      class="VideoPane-video"
+      src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/8r/8RH297E4L2141689024779212.mp4"
+      data-src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/8r/8RH297E4L2141689024779212.mp4"
+      loop="loop"
+      muted="muted"
+      autoplay="autoplay"
+      playsinline="playsinline"
+    ></video>>-->
+    <script src="js/main.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!------------------CONTENT-------------->
+    <div
+    class="col col-12 wow-full-card2"
+    style="background-image: url('images/master_banner.png')"
+  >
+    <div class="container">
+      <div class="panel">
+        <div class="mid">
+          <h1 class="right">Master's Thesis Project</h1>
+          <div class="desc">
+            <p class="right">
+                I developed a virtual experience utilising the Unity
+                Engine to delve into the potential utilisation of
+                Virtual Reality (VR) and desktop interfaces for analysing interactions
+                with pre-recorded motion-captured neurosurgical data concerning
+                extra-ventricular drain placement (EVD) procedures.
+            </p>
+          </div>
+          <a href="#" class="right">GitHub</a>
+          <a href="#" class="right">webpage</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+    
+    <div
+      class="col col-12 wow-full-card"
+      style="background-image: url('images/nightmar_banner.png')"
+    >
+      <div class="container">
+        <div class="panel">
+          <div class="mid">
+            <h1 class="right">NightMar</h1>
+            <div class="desc">
+              <p class="right">
+                Experience the ultimate fear and excitement in Nightmar, a VR
+                game where you must find four keys to escape a haunted house
+                while being hunted by a terrifying creature, with the added
+                thrill of spectators watching your every move through a security
+                camera-like view.
+              </p>
+            </div>
+            <a href="#" class="right">GitHub</a>
+            <a href="#" class="right">webpage</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div
+      class="col col-12 wow-full-card"
+      style="background-image: url('images/metacraft_banner1.png')"
+    >
+      <div class="container">
+        <div class="panel">
+          <div class="mid">
+            <h1 class="right">METAWEB</h1>
+            <div class="desc">
+              <p class="right">
+                In this project we have created an interactive webpage that
+                visualizes player and server statistics from the biggest
+                Minecraft server at KTH, called METAcraft.
+              </p>
+            </div>
+            <a href="#" class="right">GitHub</a>
+            <a href="#" class="right">Webpage</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="col col-12 wow-full-card" style="background-image: url('images/github_banner.png')">
+      <!-- <div class="video">
+          <video
+            loop="loop"
+            autoplay
+            src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/7TOROL6L97QR1463691814291.mp4"
+          ></video>
+        </div> -->
+
+        <div class="container">
+          <div class="panel">
+            <div class="mid">
+              <!-- <p>GitHub</p> -->
+              <h1>GitHub Profile</h1>
+              <div class="desc">
+                <p>
+                  You can find most of my public projects on my GitHub page!
+                </p>
+              </div>
+              <a href="#">View GitHub Profile</a>
+              <!-- <a href="#" class="extra">Comprar ahora</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
