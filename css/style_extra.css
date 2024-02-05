@@ -56,7 +56,7 @@ body {
 
 .navbar-toggler {
   font-size: var(--bs-navbar-toggler-font-size);
-  color: #fff;
+  color: #ffffff;
   background-color: transparent;
   border: none;
 }
@@ -128,6 +128,7 @@ button.navbar-toggler:focus {
 }
 
 .dropdown-menu {
+  background-color: #1d2332;
   border-radius: 5px;
   display: none;
   position: absolute;
@@ -170,6 +171,7 @@ button.navbar-toggler:focus {
 
 .dropdown-item {
   color: #fff !important;
+  background-color: #1d2332;
   text-decoration: none !important;
   font-weight: 600;
   padding: 0.5rem;
@@ -192,13 +194,13 @@ button.navbar-toggler:focus {
 }
 
 .btn-subscribe:hover {
-  background-color: #0077b5;
+  background-color: #0092e6;
   padding: 0.8rem;
   font-size: 1rem;
 }
 
 .btn-free {
-  background-color: #1c202b;
+  background-color: #1c1e26;
   color: #fff;
   padding: 0.8rem;
   font-size: 1rem;
@@ -298,14 +300,14 @@ button.navbar-toggler:focus {
   overflow-x: hidden;
   position: relative;
 }
-/* 
-.wow-full-card .top-img:before {
+
+/* .full-card .top-img:before {
   content: "";
   display: block;
   padding-top: 50%;
 }
-.wow-full-card .top-img:before,
-.wow-full-card .top-img:after {
+.full-card .top-img:before,
+.full-card .top-img:after {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -313,6 +315,21 @@ button.navbar-toggler:focus {
   display: block;
   position: relative;
 } */
+
+.contain-wide {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel-wide {
+  color: #ebdec2;
+  position: relative;
+  height: 100%;
+  /* margin: 10px; */
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 .Panel-title {
   font-size: 3.2249999999999996rem;
@@ -326,9 +343,8 @@ button.navbar-toggler:focus {
 }
 
 /* ------------------------------- FULL CARD SMALL */
-.wow-full-card {
-  /* border: 0.01px solid #504137; */
 
+.full-card {
   background-color: #000;
   background-position: 50% 50%;
   -webkit-box-shadow: inset 0 -180px 200px rgba(0, 0, 0, 0.6);
@@ -340,49 +356,41 @@ button.navbar-toggler:focus {
   height: 480px;
 }
 
-.wow-full-card-duo {
+.full-card.desc-page {
+  /* height: 800px; */
+  height: auto;
+  /* display: flex; */
+  display: grid;
+
+  /* background-position: 50% 0%; */
+}
+
+.full-card-duo {
   border: 0.01px solid #252525ae;
   background-color: #000000;
-  /* background-position: 50% 50%; */
-  /* object-fit: contain; */
-  /* -webkit-box-shadow: inset 0 -180px 200px rgba(0, 0, 0, 0.6);
-  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.08),
-    inset 0 -180px 200px rgba(0, 0, 0, 0.6); */
-  /* background-repeat: no-repeat; */
-  /* background-size: var(--panel-width) auto; */
-  /* position: relative; */
-
   padding: 0%;
-  /* width: 50 */
-
-  /* border-top: 1px solid #504137; */
-  /* position: static; */
 }
 
-.wow-card-img img {
+.card-img img {
   display: block;
   width: 100%;
-
-  /* width: 12%; */
-  /* position: relative; */
+  overflow: hidden;
 }
 
-.wow-card-img video {
+.card-img video {
   display: block;
-  /* background-position: 50% 50%; */
-
   width: 100%;
+  overflow: hidden;
 }
 
-.wow-card-desc {
-  background-color: #000;
+.card-desc {
+  background-color: #ffffff;
   background-position: 50% 50%;
   -webkit-box-shadow: inset 0 -180px 200px rgba(0, 0, 0, 0.6);
   box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.08),
     inset 0 -180px 200px rgba(0, 0, 0, 0.6);
   background-repeat: no-repeat;
-  /* background-size: var(--panel-width) auto; */
-  /* position: relative; */
+  position: relative;
   height: 200px;
 }
 
@@ -390,56 +398,53 @@ button.navbar-toggler:focus {
   column-gap: 0.5rem;
 }
 
-.wow-full-card-duo .right {
-  padding-left: 20%;
-}
-
-.wow-full-card-duo .left {
-  padding-left: 20px;
-}
-
-.wow-full-card-duo:hover {
+.full-card-duo:hover {
   border: 1px solid #00cbf8;
-}
-
-/* .wow-card-img.pp {
-  background-image: url(/images/pp_banner2.gif);
-}
-
-.wow-card-img.pp:hover {
-  background-image: url(/images/pp_banner3.gif);
-} */
-
-.wow-full-card-duo:hover img.static {
-  opacity: 0;
 }
 
 /* --------------------------- FULL CARD BIG */
 
-.wow-full-card.noshadow {
+.full-card.noshadow {
   box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.08);
 }
 
-.wow-full-card.big {
+.full-card.big {
+  background-position: 20% 25%;
   height: 1040px;
   -webkit-box-shadow: inset 0 -180px 200px rgba(0, 0, 0, 0.6);
   box-shadow: inset 0 -180px 200px rgba(0, 0, 0, 0.6);
 }
 
-.wow-full-card.big .container2 {
+.full-card.big .container2 {
   max-width: 1600px;
 }
 
-.wow-full-card.big .container2 .panel p {
-  width: 40%;
-}
-
-.wow-full-card.small {
+.full-card.small {
   height: 80px;
 }
 
-.wow-full-card.foot {
+.full-card.foot {
   height: 600px;
+}
+
+.full-card4 {
+  display: block;
+  height: 800px;
+  background-color: #000;
+  background-position: 70% 0%;
+  -webkit-box-shadow: inset 0 -180px 200px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.08),
+    inset 0 -180px 200px rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-size: var(--panel-width) auto;
+}
+
+.space-medium {
+  height: 40px;
+}
+
+.space-large {
+  height: 60px;
 }
 
 .social-table {
@@ -521,7 +526,106 @@ button.navbar-toggler:focus {
   padding: 20px 0;
 }
 
-.container2 .panel h1 {
+p {
+  float: inherit;
+  font-size: 17.28px;
+  line-height: 1.5;
+  color: #ebdec2;
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  width: 50%;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+}
+
+.full-card.big p {
+  font-size: 24px;
+  width: 40%;
+}
+
+.contain-wide p {
+  width: 100%;
+}
+
+p.white-bg {
+  color: #554f42;
+}
+
+a.rightside {
+  background: #1f2838cc;
+  /* color: #f7b10a; */
+  color: #ffffff;
+  display: inline-block;
+  /* border: 1px solid #c77e19; */
+  border: 1px solid #ffffff;
+  margin-top: 20px;
+  padding: 15px 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.25s;
+}
+
+a.leftside {
+  background: rgba(29, 29, 29, 0.884);
+  /* color: #f7b10a; */
+  color: #ffffff;
+  display: inline-block;
+  /* border: 1px solid #c77e19; */
+  border: 1px solid #ffffff;
+  margin-top: 20px;
+  padding: 15px 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.25s;
+}
+
+a.rightside:hover {
+  background: #3c5c7a;
+  color: #ffffff;
+}
+
+a.leftside:hover {
+  background: #535353;
+  color: #ffffff;
+}
+
+a.extra {
+  color: #ffffff;
+  background: rgba(161, 0, 167, 0.596);
+  border-color: #ffffff;
+  display: inline-block;
+  /* border: 1px solid #c77e19; */
+  border: 1px solid #ffffff;
+  margin-top: 20px;
+  padding: 15px 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.25s;
+}
+
+a.extra:hover {
+  background: #c214b3;
+  color: white;
+}
+
+.full-card.small a {
+  background: none;
+  padding: 0;
+  border: none;
+  display: inline-block;
+}
+.full-card.small a img {
+  height: 40px;
+}
+.full-card.small p a:last-child {
+  padding-left: 10px;
+}
+
+h1 {
   float: inherit;
   color: #fff;
   line-height: 1.5em;
@@ -531,7 +635,7 @@ button.navbar-toggler:focus {
   width: 100%;
 }
 
-.container2 .panel h2 {
+h2 {
   font-size: 1.44rem;
   line-height: 1.5;
   color: #ebdec2;
@@ -541,17 +645,32 @@ button.navbar-toggler:focus {
   width: 100%;
 }
 
-.wow-full-card .desc {
+h3 {
+  font-size: 1.44rem;
+  line-height: 1.5em;
+  font-family: "Semplicita Pro Bold";
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.full-card .desc {
   float: inherit;
   width: 100%;
   display: block;
-  /* float: right; */
 }
 
-.wow-full-card .btn-panel {
+.full-card .btn-panel {
   box-sizing: border-box;
   float: inherit;
-  /* float: right; */
   text-align: right;
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
@@ -561,6 +680,7 @@ button.navbar-toggler:focus {
   margin: 10px;
 }
 
+/* ---------------------- BUTTTONS ---------------------- */
 .Link {
   cursor: pointer;
 }
@@ -581,13 +701,14 @@ button.navbar-toggler:focus {
   appearance: none;
   border: none;
 }
+
 .Button--ghost {
   font-size: 1.08rem;
   line-height: 1.5;
   font-weight: 400;
   background: rgba(0, 0, 0, 0.4);
   border: 1px solid #000;
-  color: #ffffff;
+  color: #ffffff !important;
   min-width: 180px;
   text-transform: uppercase;
   transition: background 0.2s, color 0.2s;
@@ -620,21 +741,6 @@ button.navbar-toggler:focus {
 
 /* GITHUB BUTTON */
 
-/* .Button--ghost.Button--github {
-  background: #1f28387d;
-}
-
-.Button--ghost.Button--github .Button-outer {
-  border-color: #52869ecc;
-}
-
-.Button--ghost.Button--github:focus,
-.Button--ghost.Button--github:hover {
-  background: #3c5c7a;
-} */
-
-/* GITHUB BUTTON 2 */
-
 .Button--ghost.Button--github {
   background: rgba(29, 29, 29, 0.884);
 }
@@ -658,120 +764,9 @@ button.navbar-toggler:focus {
 }
 .Button--ghost.Button--website:focus,
 .Button--ghost.Button--website:hover {
-  background: #498eb4;
+  background: #0092e6;
 }
 
-.container2 .panel p {
-  float: inherit;
-  font-size: 17.28px;
-  line-height: 1.5;
-  color: #ebdec2;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
-  text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.8);
-  font-weight: 400;
-  width: 50%;
-  text-rendering: optimizelegibility;
-  text-size-adjust: 100%;
-}
-
-.wow-full-card.big .container2 .panel p {
-  font-size: 24px;
-}
-
-.container2 .panel p.white-bg {
-  color: #554f42;
-}
-
-.container2 .panel a.rightside {
-  background: #1f2838cc;
-  /* color: #f7b10a; */
-  color: #ffffff;
-  display: inline-block;
-  /* border: 1px solid #c77e19; */
-  border: 1px solid #ffffff;
-  margin-top: 20px;
-  padding: 15px 60px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
-  transition: all 0.25s;
-}
-
-.container2 .panel a.leftside {
-  background: rgba(29, 29, 29, 0.884);
-  /* color: #f7b10a; */
-  color: #ffffff;
-  display: inline-block;
-  /* border: 1px solid #c77e19; */
-  border: 1px solid #ffffff;
-  margin-top: 20px;
-  padding: 15px 60px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
-  transition: all 0.25s;
-}
-
-.container2 .panel a.rightside:hover {
-  /* background: #b06601;
-  color: #ffd36b; */
-  background: #3c5c7a;
-  color: #ffffff;
-}
-
-.container2 .panel a.leftside:hover {
-  /* background: #b06601;
-  color: #ffd36b; */
-  background: #535353;
-  color: #ffffff;
-}
-
-.container2 .panel a.extra {
-  color: #ffffff;
-  background: rgba(161, 0, 167, 0.596);
-  border-color: #ffffff;
-  display: inline-block;
-  /* border: 1px solid #c77e19; */
-  border: 1px solid #ffffff;
-  margin-top: 20px;
-  padding: 15px 60px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
-  transition: all 0.25s;
-}
-
-.container2 .panel a.extra:hover {
-  background: #c214b3;
-}
-
-.wow-full-card.small .container2 .panel a {
-  background: none;
-  padding: 0;
-  border: none;
-  display: inline-block;
-}
-.wow-full-card.small .container2 .panel a img {
-  height: 40px;
-}
-.wow-full-card.small .container2 .panel p a:last-child {
-  padding-left: 10px;
-}
-/* .wow-full-card-duo .video {
-  top: 0;
-} */
-
-/* .col-6 img {
-  height: 200px;
-}
-.col-6 video {
-  height: 200px;
-  object-fit: fill;
-} */
-
-/* .wow-full-card-duo .video video {
-  width: 20%;
-} */
 .mid {
   width: 100%;
   position: absolute;
@@ -791,11 +786,31 @@ button.navbar-toggler:focus {
   text-align: center;
 }
 
+.bottom {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .divider {
   height: 4px;
   margin: 0 auto;
   width: 100%;
   background-color: #000;
+  position: relative;
+}
+
+.divider-white {
+  height: 4px;
+  margin: 1.75rem auto;
+  border-radius: 0.1rem;
+  width: 80%;
+  background-color: #ffffff;
   position: relative;
 }
 
