@@ -32,6 +32,10 @@ body {
   background-color: #0f141d;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8.5rem;
+}
 /* ----------------------- HEADER NAVIGATION BAR */
 
 .navbar {
@@ -550,6 +554,15 @@ p {
 
 p.white-bg {
   color: #554f42;
+}
+
+.contain-wide a {
+  color: #f8b700;
+  text-decoration: none;
+}
+.contain-wide a:hover {
+  color: #ffcf4c;
+  text-decoration: none;
 }
 
 a.rightside {
