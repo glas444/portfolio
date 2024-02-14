@@ -218,10 +218,15 @@ button.navbar-toggler:focus {
 
 .btn-close {
   color: #fff;
-  background: #362928;
-  font-size: 1.6rem;
+  background: #1c1e26;
+  font-size: 2.4rem;
   padding: 0.4rem !important;
   margin-left: -6px;
+}
+
+.btn-close:hover {
+  color: #fff;
+  background: #1d2332;
 }
 
 .dropdown-text {
@@ -638,6 +643,12 @@ a.extra:hover {
   padding-left: 10px;
 }
 
+.foot a {
+  color: #ffffffa4;
+
+  /* text-decoration: none; */
+}
+
 h1 {
   float: inherit;
   color: #fff;
@@ -664,7 +675,7 @@ h3 {
   font-family: "Semplicita Pro Bold";
   color: #fff;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 h4 {

@@ -60,34 +60,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-window.onload = function () {
-  // Hardcode the birth year
-  var birthYear = 1999;
-  // Calculate the age
-  var currentYear = new Date().getFullYear();
-  var age = currentYear - birthYear;
-  // Update the age in the HTML
-  document.getElementById("age").innerText = age;
-};
 
-document.getElementById("fluidsim").addEventListener("mouseenter", function () {
-  fluidsimVideo.play();
-});
-
-document.getElementById("fluidsim").addEventListener("mouseleave", function () {
-  fluidsimVideo.pause();
-  // fluidsimVideo.currentTime = 0;
-});
-
-document.getElementById("pp").addEventListener("mouseenter", function () {
-  document
-    .getElementById("ppVideo")
-    .setAttribute("src", "images/pp_banner5.gif");
-});
-
-document.getElementById("pp").addEventListener("mouseleave", function () {
-  document
-    .getElementById("ppVideo")
-    .setAttribute("src", "images/pp_banner4.gif");
-});
-// Overflow Menu
