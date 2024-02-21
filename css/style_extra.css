@@ -654,13 +654,18 @@ a.extra:hover {
     font-size: 0.8rem;
   }
   .full-card .big {
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
     width: 100% !important;
   }
   p {
     width: 100%;
   }
-  
+  .full-card-duo h1 {
+    font-size: 2rem !important;
+  }
+  .Button--ghost {
+    min-width: 160px !important;
+  }
 }
 
 h1 {
