@@ -649,6 +649,19 @@ a.extra:hover {
   /* text-decoration: none; */
 }
 
+@media (max-width: 600px) {
+  .full-card {
+    font-size: 0.8rem;
+  }
+  .full-card .big {
+    font-size: 1.5rem !important;
+    width: 100% !important;
+  }
+  p {
+    width: 100%;
+  }
+}
+
 h1 {
   float: inherit;
   color: #fff;
