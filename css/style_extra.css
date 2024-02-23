@@ -433,7 +433,8 @@ button.navbar-toggler:focus {
 }
 
 .full-card.foot {
-  height: 600px;
+  height: auto;
+  background-repeat: repeat !important;
 }
 
 .full-card4 {
